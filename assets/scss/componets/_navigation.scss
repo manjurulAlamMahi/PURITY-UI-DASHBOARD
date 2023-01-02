@@ -1,0 +1,30 @@
+/* ============================== Menu Part Start =================================== */
+#main_menu{
+    padding: 35px 0 0 0 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    .menu_part{
+        ul{
+            li{
+                margin-left: 33px;
+                a{
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 15px;
+                    color: #fff;
+                    i{
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .mobile_menu_button{
+        display: none;
+    }
+}
+/* ============================== Menu Part End =================================== */
+
