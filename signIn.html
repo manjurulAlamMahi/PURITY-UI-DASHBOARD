@@ -18,10 +18,10 @@
 <body data-bs-spy="scroll" data-bs-target="#main_menu">
 
     <!-- ====================== Navigation Part Start ======================= -->
-    <nav id="main_menu" class="navbar navbar-expand-lg navbar-expand-md py-lg-0">
-        <div class="container" style="background: transparent;">
+    <nav id="signIn_main_menu" class="navbar navbar-expand-lg navbar-expand-md py-lg-0">
+        <div class="container py-0">
             <div class="logo">
-                <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+                <a href="#"><img src="assets/images/Logo-Black.png" alt="Logo-Black"></a>
             </div>
             <div class="collapse navbar-collapse menu_part" id="navbarNav" style="justify-content: end; align-items: center;">
                 <ul class="navbar-nav">
@@ -80,63 +80,56 @@
     <!-- ====================== Navigation Part End ======================= -->
 
     <!-- ====================== Banner Part Start ======================= -->
-    <section id="banner">
-        <div class="ovrly_1">
-            <img src="assets/images/bg-ovrly1.png" alt="bg-ovrly1">
-        </div>
-        <div class="ovrly_2">
-            <img src="assets/images/bg-ovrly2.png" alt="bg-ovrly2">
-        </div>
-        <div class="banner_text">
-            <h1>Welcome!</h1>
-            <p>Use these awesome forms to login or create new account in your project for free.</p>
-        </div>
-    </section>
-    <!-- ====================== Banner Part End ======================= -->
-
-    <!-- ====================== Register Part Start ======================= -->
-    <section id="register">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 m-auto">
-                    <div class="card register_card">
-                        <div class="card-body register_card_body">
-                            <div class="reg_top text-center">
-                                <h6>Register with</h6>
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="mdi mdi-apple"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
-                                </ul>
-                                <span>Or</span>
-                            </div>
-                            <div class="reg_btm">
-                                <div class="form-group mb-4">
-                                    <label for="Name" class="form-label">Name</label>
-                                    <input type="text" id="Name" value="" name="name" class="form-control">
+    <section id="SignIn">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="card SignIn_card">
+                                <div class="card-body SignIn_card_body">
+                                    <div class="signIn_top">
+                                        <h1>Welcome Back</h1>
+                                        <p>Enter your email and password to sign in</p>
+                                    </div>
+                                    <div class="signIn_btm">
+                                        <div class="form-group mb-4">
+                                            <label for="Email" class="form-label">Email</label>
+                                            <input type="email" id="Email" value="" name="email" class="form-control">
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label for="Password" class="form-label">Password</label>
+                                            <input type="password" id="Password" value="" name="password" class="form-control">
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">Remember me </label>
+                                        </div>
+                                        <button type="submit" class="">SIGN IN</button>
+                                        <p>Already have an account? <a href="#">Sign in</a></p>
+                                    </div>
                                 </div>
-                                <div class="form-group mb-4">
-                                    <label for="Email" class="form-label">Email</label>
-                                    <input type="email" id="Email" value="" name="email" class="form-control">
-                                </div>
-                                <div class="form-group mb-4">
-                                    <label for="Password" class="form-label">Password</label>
-                                    <input type="password" id="Password" value="" name="password" class="form-control">
-                                </div>
-                                <div class="form-check form-switch">
-                                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                                    <label class="form-check-label" for="flexSwitchCheckDefault">Remember me </label>
-                                </div>
-                                <button type="submit" class="">SIGN UP</button>
-                                <p>Already have an account? <a href="#">Sign in</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-lg-6">
+                <div class="banner">
+                    <div class="ovrly1">
+                        <img src="assets/images/signIn-ovrly1.png" alt="signIn-ovrly1.png">
+                    </div>
+                    <div class="ovrly2">
+                        <img src="assets/images/signIn-ovrly2.png" alt="signIn-ovrly2.png">
+                    </div>
+                    <div class="logo">
+                        <img src="assets/images/chakra.png" alt="chakra">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- ====================== Register Part End ======================= -->
+    <!-- ====================== Banner Part End ======================= -->
 
     <!-- ======================= Bottom Footer CopyRight Part Start ======================= -->
     <section id="copyRight">

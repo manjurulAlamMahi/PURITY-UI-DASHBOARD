@@ -1,5 +1,7 @@
 /* ==================  Font Part Start  ================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 /* ==================  Common Part Start  ================== */
 * {
   margin: 0;
@@ -36,71 +38,42 @@ li {
   padding: 0;
 }
 
-body {
-  font-family: "Inter", sans-serif !important;
+a,
+button {
+  font-family: "Inter", sans-serif;
 }
 
-.common_head h6 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #4FD1C5;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.common_head h4 {
-  font-size: 52px;
-  font-weight: 500;
-  color: #000;
-  line-height: 71px;
-}
-.common_head p {
-  font-size: 15px;
-  font-weight: 500;
-  color: #000;
-  line-height: 38px;
+p,
+span {
+  font-family: "Poppins", sans-serif;
 }
 
-.mbtn {
-  padding: 10px 28px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
 }
 
-.btn-hover {
-  color: #fff;
-  border: 1px solid;
-  background-color: #4FD1C5;
-  border-color: #4FD1C5;
+#wrapper {
+  margin-left: 280px;
+  padding: 30px 0;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-.btn-hover:hover {
-  background: #fff;
-  color: #4FD1C5;
-}
 
-.common_head {
-  text-align: center;
-}
-.common_head h2 {
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 54px;
-  color: #1E1E1E;
-  padding-bottom: 20px;
-}
-.common_head p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #787878;
+.minwidth {
+  margin-left: 60px !important;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
 }
 
 /* ==================  Common Part End  ================== */
@@ -169,11 +142,11 @@ body {
 /* ============================== Menu Part Start =================================== */
 #main_menu {
   padding: 35px 0 0 0 !important;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999999;
+  z-index: 999999999;
 }
 #main_menu .menu_part ul li {
   margin-left: 33px;
@@ -191,6 +164,36 @@ body {
   display: none;
 }
 
+#signIn_main_menu {
+  position: absolute;
+  top: 30px;
+  left: 140px;
+  width: 70%;
+  padding: 24px 23px !important;
+  background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
+  border: 1.5px solid #FFFFFF;
+  box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
+  border-radius: 15px;
+  z-index: 999999999;
+}
+#signIn_main_menu .menu_part ul li {
+  margin-left: 33px;
+}
+#signIn_main_menu .menu_part ul li a {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: #2D3748;
+}
+#signIn_main_menu .menu_part ul li a i {
+  padding-right: 5px;
+}
+#signIn_main_menu .mobile_menu_button {
+  display: none;
+}
+
 /* ============================== Menu Part End =================================== */
 /* ============================== Banner Part Start =================================== */
 #banner {
@@ -202,12 +205,693 @@ body {
   position: relative;
 }
 #banner .ovrly_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#banner .ovrly_2 {
+  position: absolute;
+  top: 0;
+  right: -230px;
+}
+#banner .banner_text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  text-align: center;
+}
+#banner .banner_text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 42px;
+  padding-bottom: 10px;
+}
+#banner .banner_text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 20px;
+  padding: 0 140px;
+}
+
+/* ============================== Banner Part End =================================== */
+/* ============================== Register Part Start =================================== */
+#register {
+  transform: translateY(-260px);
+}
+#register .register_card {
+  padding: 45px 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  border: none;
+}
+#register .register_card .register_card_body .reg_top {
+  padding-bottom: 20px;
+}
+#register .register_card .register_card_body .reg_top h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2D3748;
+  padding-bottom: 20px;
+}
+#register .register_card .register_card_body .reg_top ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#register .register_card .register_card_body .reg_top ul li {
+  width: 75px;
+  height: 75px;
+  border: 1px solid #E2E8F0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#register .register_card .register_card_body .reg_top ul li a {
+  font-size: 25px;
+  color: #2D3748;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#register .register_card .register_card_body .reg_top ul li:hover {
+  border-color: #4FD1C5;
+}
+#register .register_card .register_card_body .reg_top ul li:hover a {
+  color: #4FD1C5;
+  transform: scale(1.1);
+}
+#register .register_card .register_card_body .reg_top span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+#register .register_card .register_card_body .reg_btm .form-group label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2D3748;
+}
+#register .register_card .register_card_body .reg_btm .form-group input {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#register .register_card .register_card_body .reg_btm .form-group input:focus {
+  box-shadow: none;
+  border-color: #4FD1C5;
+  color: #4FD1C5;
+}
+#register .register_card .register_card_body .reg_btm .form-check input:checked {
+  background-color: #4FD1C5;
+  border-color: #4FD1C5;
+}
+#register .register_card .register_card_body .reg_btm .form-check input:focus {
+  box-shadow: none;
+}
+#register .register_card .register_card_body .reg_btm button {
+  width: 100%;
+  background: #4FD1C5;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 50px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#register .register_card .register_card_body .reg_btm button:hover {
+  font-size: 16px;
+  background: #fff;
+  border-color: #4FD1C5;
+  color: #4FD1C5;
+}
+#register .register_card .register_card_body .reg_btm p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#register .register_card .register_card_body .reg_btm p a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4FD1C5;
+  padding-left: 5px;
+}
+#register .register_card .register_card_body .reg_btm p a:hover {
+  text-decoration: underline;
+}
+
+/* ============================== Register Part End =================================== */
+/* ============================== CopyRight Part Start =================================== */
+#copyRight {
+  padding: 50px 0;
+}
+#copyRight p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#copyRight p span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4FD1C5;
+}
+#copyRight ul {
+  display: flex;
+  justify-content: end;
+}
+#copyRight ul li {
+  margin-right: 45px;
+}
+#copyRight ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#copyRight ul li a:hover {
+  color: #4FD1C5;
+}
+
+/* ============================== CopyRight Part End =================================== */
+/* ============================== Menu Part Start =================================== */
+#main_menu {
+  padding: 35px 0 0 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999999;
+}
+#main_menu .menu_part ul li {
+  margin-left: 33px;
+}
+#main_menu .menu_part ul li a {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: #fff;
+}
+#main_menu .menu_part ul li a i {
+  padding-right: 5px;
+}
+#main_menu .mobile_menu_button {
+  display: none;
+}
+
+#signIn_main_menu {
+  position: absolute;
+  top: 30px;
+  left: 140px;
+  width: 70%;
+  padding: 24px 23px !important;
+  background: linear-gradient(112.83deg, rgba(255, 255, 255, 0.82) 0%, rgba(255, 255, 255, 0.8) 110.84%);
+  border: 1.5px solid #FFFFFF;
+  box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(10.5px);
+          backdrop-filter: blur(10.5px);
+  border-radius: 15px;
+  z-index: 999999999;
+}
+#signIn_main_menu .menu_part ul li {
+  margin-left: 33px;
+}
+#signIn_main_menu .menu_part ul li a {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  color: #2D3748;
+}
+#signIn_main_menu .menu_part ul li a i {
+  padding-right: 5px;
+}
+#signIn_main_menu .mobile_menu_button {
+  display: none;
+}
+
+/* ============================== Menu Part End =================================== */
+/* ============================== SignIN Part Start =================================== */
+#SignIn {
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+#SignIn .SignIn_card {
+  background: #FFFFFF;
+  border: none;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_top {
+  padding-bottom: 20px;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_top h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #4FD1C5;
+  padding-bottom: 20px;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_top p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm .form-group label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2D3748;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm .form-group input {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 15px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm .form-group input:focus {
+  box-shadow: none;
+  border-color: #4FD1C5;
+  color: #4FD1C5;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm .form-check input:checked {
+  background-color: #4FD1C5;
+  border-color: #4FD1C5;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm .form-check input:focus {
+  box-shadow: none;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm button {
+  width: 100%;
+  background: #4FD1C5;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 50px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm button:hover {
+  font-size: 16px;
+  background: #fff;
+  border-color: #4FD1C5;
+  color: #4FD1C5;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm p {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm p a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4FD1C5;
+  padding-left: 5px;
+}
+#SignIn .SignIn_card .SignIn_card_body .signIn_btm p a:hover {
+  text-decoration: underline;
+}
+#SignIn .banner {
+  background: #5CE1CA;
+  border-radius: 0px 0px 0px 25px;
+  height: 872px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#SignIn .banner .ovrly1 {
+  position: absolute;
   top: 0;
   left: 0;
 }
-#banner .ovrly_2 {
+#SignIn .banner .ovrly2 {
+  position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+}
+#SignIn .banner .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* ============================== Banner Part End =================================== *//*# sourceMappingURL=style.css.map */
+/* ============================== SignIN Part End =================================== */
+/* ============================== SideBar Part Start =================================== */
+#side_navbar {
+  padding: 30px 20px;
+  position: fixed;
+  inset: 0;
+  width: 240px;
+}
+#side_navbar.yo {
+  width: 50px !important;
+}
+#side_navbar .navigation {
+  width: 50px;
+  background: transparent;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#side_navbar .navigation.active {
+  background: transparent;
+  width: 240px;
+}
+#side_navbar .navigation.active .toggle::after {
+  font-size: 12px;
+}
+#side_navbar .navigation.active .toggle::before {
+  width: 80%;
+}
+#side_navbar .navigation.active ul {
+  margin-bottom: 70px;
+}
+#side_navbar .navigation.active ul li {
+  padding: 12px 16px;
+}
+#side_navbar .navigation.active ul li a .icon {
+  padding: inherit;
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  text-align: center;
+  line-height: 30px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation.active ul li a .icon i {
+  font-size: 14px;
+  color: #4FD1C5;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation.active ul li a .title {
+  font-size: 12px;
+}
+#side_navbar .navigation.active ul li:hover {
+  background: #fff;
+  color: #222;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+#side_navbar .navigation.active ul li.side_bar_sub_head {
+  padding-left: 20px;
+  padding-top: 10px;
+  display: block;
+  box-shadow: none;
+}
+#side_navbar .navigation.active ul li.side_bar_sub_head:hover {
+  background: transparent;
+}
+#side_navbar .navigation.active ul li.side_bar_sub_head p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2D3748;
+  padding: 0;
+  margin-bottom: 10px;
+}
+#side_navbar .navigation.active .help_line {
+  margin: 0 auto;
+  display: block;
+  width: 210px;
+  height: 160px;
+  background: #4FD1C5;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+}
+#side_navbar .navigation.active .help_line .ovrly_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  z-index: 3;
+}
+#side_navbar .navigation.active .help_line .ovrly_text .icon {
+  width: 35px;
+  height: 35px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#side_navbar .navigation.active .help_line .ovrly_text .icon i {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  background: #4FD1C5;
+  color: #fff;
+  font-size: 8px;
+  border-radius: 50%;
+}
+#side_navbar .navigation.active .help_line .ovrly_text .text {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#side_navbar .navigation.active .help_line .ovrly_text .text h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+#side_navbar .navigation.active .help_line .ovrly_text .text p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+#side_navbar .navigation.active .help_line .ovrly_text a {
+  padding: 10px 50px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #2D3748;
+}
+#side_navbar .navigation.active .help_line .ovrly_img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+#side_navbar .navigation ul {
+  padding-top: 50px;
+}
+#side_navbar .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  padding: 12px 0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation ul li:hover a .icon {
+  background: #4FD1C5;
+}
+#side_navbar .navigation ul li:hover a .icon i {
+  color: #fff;
+}
+#side_navbar .navigation ul li:hover a .title {
+  color: #2D3748;
+}
+#side_navbar .navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+#side_navbar .navigation ul li a .icon {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  text-align: center;
+  line-height: 30px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation ul li a .icon i {
+  font-size: 14px;
+  color: #4FD1C5;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  text-align: start;
+  white-space: nowrap;
+  font-size: 0px;
+  font-weight: 700;
+  color: #A0AEC0;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation ul li.side_bar_sub_head {
+  display: none;
+}
+#side_navbar .navigation ul li.side_bar_sub_head p {
+  font-size: 0;
+  font-weight: 700;
+  color: #2D3748;
+  padding-bottom: 24px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#side_navbar .navigation .toggle {
+  position: relative;
+  z-index: 99999;
+  cursor: pointer;
+  padding: 0 5px;
+}
+#side_navbar .navigation .toggle::after {
+  content: "PURITY UI DASHBOARD";
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 0;
+  color: #2D3748;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+#side_navbar .navigation .toggle::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #A0AEC0;
+  transition: 1s;
+}
+#side_navbar .navigation .help_line {
+  display: none;
+}
+
+/* ============================== SideBar Part End =================================== */
+/* ============================== Header Part Start =================================== */
+#header {
+  padding-bottom: 25px;
+}
+#header .breads nav ol li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#header .breads nav ol li.active a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #2D3748;
+}
+#header .title h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+#header .input-group {
+  width: 69%;
+}
+#header .input-group button {
+  background: #FFFFFF;
+  border: 0.5px solid #E2E8F0;
+  border-radius: 15px 0 0 15px;
+  border-right: none;
+  padding: 10px 12px;
+  font-size: 16px;
+}
+#header .input-group input {
+  background: #FFFFFF;
+  border: 0.5px solid #E2E8F0;
+  border-radius: 0 15px 15px 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+#header .input-group input:focus {
+  box-shadow: none;
+  border-color: #4FD1C5;
+  border-left-color: #E2E8F0;
+  color: #4FD1C5;
+}
+#header .header_right {
+  align-self: center;
+}
+#header .header_right a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A0AEC0;
+  margin: 0 10px;
+}
+#header .header_right a i {
+  color: #A0AEC0;
+  font-size: 15px !important;
+}
+
+/* ============================== Header Part End =================================== *//*# sourceMappingURL=style.css.map */

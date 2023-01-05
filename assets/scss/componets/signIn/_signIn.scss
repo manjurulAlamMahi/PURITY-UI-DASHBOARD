@@ -1,0 +1,104 @@
+/* ============================== SignIN Part Start =================================== */
+#SignIn{
+    padding-bottom: 120px;
+    overflow: hidden;
+    .SignIn_card{
+        background: #FFFFFF;
+        border: none;
+        .SignIn_card_body{
+            .signIn_top{
+                padding-bottom: 20px;
+                h1{
+                    @include text(32px,700,$hover);
+                    padding-bottom: 20px;
+                }
+                p{
+                    @include text(14px,700,$GreyI);
+                }
+            }
+            .signIn_btm{
+                .form-group{
+                    label{
+                        @include text(14px,400,$Grey);
+                    }
+                    input{
+                        background: #FFFFFF;
+                        border: 1px solid #E2E8F0;
+                        border-radius: 15px;
+                        padding: 15px 20px;
+                        @include text(14px,400,$GreyI);
+                        &:focus{
+                            box-shadow: none;
+                            border-color: $hover;
+                            color: $hover;
+                        }
+                    }
+                }
+                .form-check {
+                    input{
+                        &:checked{
+                            background-color: $hover;
+                            border-color: $hover;
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                button{
+                    width: 100%;
+                    background: $hover;
+                    border-radius: 12px;
+                    border: 1px solid transparent;
+                    padding: 10px;
+                    @include text(10px,700,#fff);
+                    margin-top: 50px;
+                    @include transition();
+                    &:hover{
+                        font-size: 16px;
+                        background: #fff;
+                        border-color: $hover;
+                        color: $hover;
+                    }
+                }
+                p{
+                    padding-top: 20px;
+                    text-align: center;
+                    @include text(14px,400,$GreyI);
+                    a{
+                        @include text(16px,400,$hover);
+                        padding-left: 5px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        background: #5CE1CA;
+        border-radius: 0px 0px 0px 25px;
+        height: 872px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        .ovrly1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .ovrly2{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .logo{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+/* ============================== SignIN Part End =================================== */

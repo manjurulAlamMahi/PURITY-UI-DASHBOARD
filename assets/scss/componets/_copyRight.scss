@@ -1,0 +1,25 @@
+/* ============================== CopyRight Part Start =================================== */
+#copyRight{
+    padding: 50px 0;
+    p{
+        @include text(14px,400,$GreyI);
+        span{
+            @include text(16px,500,$hover); 
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: end;
+        li{
+            margin-right: 45px;
+            a{
+                @include text(14px,400,$GreyI);
+                @include transition();
+                &:hover{
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+/* ============================== CopyRight Part End =================================== */

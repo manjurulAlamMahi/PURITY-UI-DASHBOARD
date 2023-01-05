@@ -1,0 +1,110 @@
+/* ============================== Register Part Start =================================== */
+#register{
+    transform: translateY(-260px);
+    .register_card{
+        padding: 45px 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 7px 23px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        border: none;
+        .register_card_body{
+            .reg_top{
+                padding-bottom: 20px;
+                h6{
+                    @include text(18px,700,$Grey);
+                    padding-bottom: 20px;
+                }
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 20px;
+                    li{
+                        width: 75px;
+                        height: 75px;
+                        border: 1px solid #E2E8F0;
+                        border-radius: 15px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 0 7px;
+                        a{
+                            font-size: 25px;
+                            color: $Grey;
+                            @include transition();
+                        }
+                        @include transition();
+                        &:hover{
+                            border-color: $hover;
+                            a{
+                                color: $hover;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+                span{
+                    @include text(18px,700,$GreyI);
+                }
+            }
+            .reg_btm{
+                .form-group{
+                    label{
+                        @include text(14px,400,$Grey);
+                    }
+                    input{
+                        background: #FFFFFF;
+                        border: 1px solid #E2E8F0;
+                        border-radius: 15px;
+                        padding: 15px 20px;
+                        @include text(14px,400,$GreyI);
+                        &:focus{
+                            box-shadow: none;
+                            border-color: $hover;
+                            color: $hover;
+                        }
+                    }
+                }
+                .form-check {
+                    input{
+                        &:checked{
+                            background-color: $hover;
+                            border-color: $hover;
+                        }
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                button{
+                    width: 100%;
+                    background: $hover;
+                    border-radius: 12px;
+                    border: 1px solid transparent;
+                    padding: 10px;
+                    @include text(10px,700,#fff);
+                    margin-top: 50px;
+                    @include transition();
+                    &:hover{
+                        font-size: 16px;
+                        background: #fff;
+                        border-color: $hover;
+                        color: $hover;
+                    }
+                }
+                p{
+                    padding-top: 20px;
+                    text-align: center;
+                    @include text(14px,400,$GreyI);
+                    a{
+                        @include text(16px,400,$hover);
+                        padding-left: 5px;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Register Part End =================================== */

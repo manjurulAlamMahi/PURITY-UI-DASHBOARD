@@ -7,12 +7,32 @@
     overflow: hidden;
     position: relative;
     .ovrly_1{
+        position: absolute;
         top: 0;
         left: 0;
+        display: none;
     }
     .ovrly_2{
+        position: absolute;
         top: 0;
-        right: 0;
+        right: -230px;
+    }
+    .banner_text{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100px;
+        text-align: center;
+        h1{
+            @include text(32px,700,#fff);
+            line-height: 42px;
+            padding-bottom: 10px
+        }
+        p{
+            @include text(14px,400,#fff);
+            line-height: 20px;
+            padding: 0 140px;
+        }
     }
 }
 /* ============================== Banner Part End =================================== */

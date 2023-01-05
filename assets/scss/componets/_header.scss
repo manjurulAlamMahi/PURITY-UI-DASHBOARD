@@ -1,0 +1,61 @@
+/* ============================== Header Part Start =================================== */
+#header{
+    padding-bottom: 25px;
+    .breads{
+        nav{
+            ol{
+                li{
+                    a{
+                        @include text(14px,400,$GreyI);
+                    }
+                    &.active{
+                        a{
+                            @include text(14px,400,$Grey);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .title{
+        h2{
+            @include text(14px,700,$Grey);
+        }
+    }
+    .input-group{
+        width: 69%;
+        button{
+            background: #FFFFFF;
+            border: 0.5px solid #E2E8F0;
+            border-radius: 15px 0 0 15px;
+            border-right: none;
+            padding: 10px 12px;
+            font-size: 16px;
+        }
+        input{
+            background: #FFFFFF;
+            border: 0.5px solid #E2E8F0;
+            border-radius: 0 15px 15px 0;
+            padding: 10px 20px;
+            @include text(14px,400,$GreyI);
+            &:focus{
+                box-shadow: none;
+                border-color: $hover;
+                border-left-color: #E2E8F0;
+                color: $hover;
+            }
+        }
+    }
+    .header_right{
+        align-self: center;
+        a{
+            @include text(12px,700,$GreyI);
+            margin: 0 10px;
+            i{
+                color: $GreyI;
+                font-size: 15px !important;
+            }
+        }
+    }
+}
+/* ============================== Header Part End =================================== */
