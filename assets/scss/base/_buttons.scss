@@ -1,0 +1,28 @@
+/* ==================  Buttons Part Start  ================== */
+.btn-linear{
+    background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+    border-radius: 12px;
+    @include text(10px,700,#fff);
+    display: inline-block !important;
+    &:hover{
+        color: #fff;
+    }
+}
+.btn-outline-info{
+    background: transparent;
+    border: 1px solid #4FD1C5;
+    border-radius: 12px;
+    @include text(10px,700,#4FD1C5);
+    @include transition();
+    &:hover{
+        color: #fff;
+        background: #4FD1C5;
+    }
+}
+.edit{
+    @include text(12px,700,#718096);
+    &:hover{
+        color: $hover;
+    }
+}
+/* ==================  Buttons Part End  ================== */

@@ -69,5 +69,70 @@ h6{
     margin-left: 60px !important;
     @include transition();
 }
-
+.title{
+    @include text(18px,700,$Grey);
+}
+.avatar{
+    img{
+        border-radius: 10px !important;
+    }
+}
+.avatar_info{
+    h6{
+        @include text(14px,700,$Grey);
+    }
+    p{
+        @include text(14px,400,$GreyI);
+    }
+}
+.bg-secondary{
+    background: #CBD5E0 !important;
+    color: #fff !important;
+}
+.bg-success{
+    background: #48BB78 !important;
+    color: #fff !important;
+}
+.rounded{
+    border-radius: 50% !important;
+}
+.check{
+    width: 15px !important; 
+    height: 15px !important; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+    i{
+        font-size: 10px !important;
+    }
+}
+.sub-title{
+    @include text(14px,400,$GreyI);
+}
+.bold{
+    font-weight: 700 !important;
+}
+.bar-text{
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: $hover !important;
+}
+.bar-mesure {
+    font-size: 0.8em;
+    border: 1px solid $hover;
+    border-radius: 1em;
+    background: #eee;
+    max-width: 15rem;
+}
+.bar-mesure > div {
+padding: 0.1em 0.5em;
+border-radius: 1em;
+text-align: right;
+background-color: $hover;
+background-size: 15rem 100%;
+color: $hover;
+box-sizing: border-box;
+}
+                                        
 /* ==================  Common Part End  ================== */

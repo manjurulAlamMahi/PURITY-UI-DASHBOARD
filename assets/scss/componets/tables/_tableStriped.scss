@@ -1,0 +1,45 @@
+/* ============================== Table  Part Start =================================== */
+#tables{
+    .card{
+        border: none;
+        border-radius: 25px;
+        padding: 28px 20px;
+    }
+}
+
+.table-responsive{
+    border: none !important;
+    tbody, td, tfoot, th, thead, tr {
+        border-color: #E2E8F0 !important;
+        border-style: solid;
+    }
+    tbody{
+        tr{
+            td{
+                padding: 20px 0;
+                h6{
+                    @include text(14px,700,$Grey);
+                }
+                p{
+                    @include text(14px,400,$GreyI);
+                }
+            }
+            &:last-child{
+                border-color: transparent !important;
+                td{
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+    thead{
+        tr{
+            td{
+                @include text(10px,700,$GreyI);
+            }
+        }
+    }
+}
+
+
+/* ============================== Table  Part End =================================== */

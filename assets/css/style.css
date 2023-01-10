@@ -76,7 +76,129 @@ h6 {
   -o-transition: all linear 0.3s;
 }
 
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2D3748;
+}
+
+.avatar img {
+  border-radius: 10px !important;
+}
+
+.avatar_info h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.avatar_info p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+
+.bg-secondary {
+  background: #CBD5E0 !important;
+  color: #fff !important;
+}
+
+.bg-success {
+  background: #48BB78 !important;
+  color: #fff !important;
+}
+
+.rounded {
+  border-radius: 50% !important;
+}
+
+.check {
+  width: 15px !important;
+  height: 15px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+}
+.check i {
+  font-size: 10px !important;
+}
+
+.sub-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.bar-text {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #4FD1C5 !important;
+}
+
+.bar-mesure {
+  font-size: 0.8em;
+  border: 1px solid #4FD1C5;
+  border-radius: 1em;
+  background: #eee;
+  max-width: 15rem;
+}
+
+.bar-mesure > div {
+  padding: 0.1em 0.5em;
+  border-radius: 1em;
+  text-align: right;
+  background-color: #4FD1C5;
+  background-size: 15rem 100%;
+  color: #4FD1C5;
+  box-sizing: border-box;
+}
+
 /* ==================  Common Part End  ================== */
+/* ==================  Buttons Part Start  ================== */
+.btn-linear {
+  background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #fff;
+  display: inline-block !important;
+}
+.btn-linear:hover {
+  color: #fff;
+}
+
+.btn-outline-info {
+  background: transparent;
+  border: 1px solid #4FD1C5;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #4FD1C5;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.btn-outline-info:hover {
+  color: #fff;
+  background: #4FD1C5;
+}
+
+.edit {
+  font-size: 12px;
+  font-weight: 700;
+  color: #718096;
+}
+.edit:hover {
+  color: #4FD1C5;
+}
+
+/* ==================  Buttons Part End  ================== */
 /* ============ Menu Fix Start ============= */
 /* ============ Menu Fix End ============= */
 @-webkit-keyframes marquee {
@@ -575,13 +697,16 @@ h6 {
   padding: 30px 20px;
   position: fixed;
   inset: 0;
-  width: 240px;
+  width: 245px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 #side_navbar.yo {
-  width: 50px !important;
+  width: 70px !important;
 }
 #side_navbar .navigation {
-  width: 50px;
+  width: 70px;
   background: transparent;
   overflow: hidden;
   transition: 0.5s;
@@ -652,8 +777,23 @@ h6 {
   padding: 0;
   margin-bottom: 10px;
 }
+#side_navbar .navigation.active ul li.active {
+  background: #fff;
+  color: #222;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+#side_navbar .navigation.active ul li.active a .icon {
+  background: #4FD1C5;
+}
+#side_navbar .navigation.active ul li.active a .icon i {
+  color: #fff;
+}
+#side_navbar .navigation.active ul li.active a .title {
+  color: #2D3748;
+}
 #side_navbar .navigation.active .help_line {
-  margin: 0 auto;
   display: block;
   width: 210px;
   height: 160px;
@@ -705,7 +845,7 @@ h6 {
   color: #fff;
 }
 #side_navbar .navigation.active .help_line .ovrly_text a {
-  padding: 10px 50px;
+  padding: 10px 44px;
   background: #FFFFFF;
   border-radius: 12px;
   font-size: 10px;
@@ -802,6 +942,15 @@ h6 {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
+#side_navbar .navigation ul li.active a .icon {
+  background: #4FD1C5;
+}
+#side_navbar .navigation ul li.active a .icon i {
+  color: #fff;
+}
+#side_navbar .navigation ul li.active a .title {
+  color: #2D3748;
+}
 #side_navbar .navigation .toggle {
   position: relative;
   z-index: 99999;
@@ -894,4 +1043,396 @@ h6 {
   font-size: 15px !important;
 }
 
-/* ============================== Header Part End =================================== *//*# sourceMappingURL=style.css.map */
+/* ============================== Header Part End =================================== */
+/* ============================== Table  Part Start =================================== */
+#tables .card {
+  border: none;
+  border-radius: 25px;
+  padding: 28px 20px;
+}
+
+.table-responsive {
+  border: none !important;
+}
+.table-responsive tbody, .table-responsive td, .table-responsive tfoot, .table-responsive th, .table-responsive thead, .table-responsive tr {
+  border-color: #E2E8F0 !important;
+  border-style: solid;
+}
+.table-responsive tbody tr td {
+  padding: 20px 0;
+}
+.table-responsive tbody tr td h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.table-responsive tbody tr td p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+}
+.table-responsive tbody tr:last-child {
+  border-color: transparent !important;
+}
+.table-responsive tbody tr:last-child td {
+  border-color: transparent !important;
+}
+.table-responsive thead tr td {
+  font-size: 10px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+
+/* ============================== Table  Part End =================================== */
+/* ============================== Billing Part Start =================================== */
+.billing_card {
+  background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+  border-radius: 15px;
+  padding: 22px 35px;
+  position: relative;
+}
+.billing_card .ovrly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.billing_card .ovrly img {
+  width: 100%;
+  max-width: 100%;
+}
+.billing_card .ovrly_text .head {
+  padding-bottom: 40px;
+  position: relative;
+}
+.billing_card .ovrly_text .head h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.billing_card .ovrly_text .head::after {
+  position: absolute;
+  content: "";
+  top: 10px;
+  transform: translateY(-50%);
+  right: 0;
+  background: #FFFFFF;
+  opacity: 0.4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.billing_card .ovrly_text .head::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  transform: translateY(-50%);
+  right: 15px;
+  background: #FFFFFF;
+  opacity: 0.4;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.billing_card .ovrly_text .body {
+  padding-bottom: 10px;
+}
+.billing_card .ovrly_text .body h6 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.billing_card .ovrly_text .footer ul li {
+  margin-right: 35px;
+}
+.billing_card .ovrly_text .footer ul li p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #fff;
+}
+.billing_card .ovrly_text .footer ul li h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.post {
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+  padding: 30px 0;
+  text-align: center;
+}
+.post .icon {
+  background: #4FD1C5;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 12px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.post .icon i {
+  font-size: 25px;
+  color: #fff;
+}
+.post h4, .post h6 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.post p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+
+.payment_method {
+  margin-top: 25px;
+}
+.payment_method .card {
+  padding: 24px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+.payment_method .card .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.payment_method .card .header h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.payment_method .card .icon {
+  transform: translateY(-2px);
+}
+.payment_method .card .methods {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 15px;
+  padding: 10px 22px;
+}
+.payment_method .card .methods p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #A0AEC0;
+  padding-left: 15px;
+}
+.payment_method .card .methods .action {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+
+.invoice .card {
+  padding: 20px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+.invoice .card .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  align-items: center;
+}
+.invoice .card .header h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.invoice .card .invoice_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.invoice .card .invoice_list li:last-child {
+  margin-bottom: 0;
+}
+.invoice .card .invoice_list li .amount {
+  display: flex;
+  align-items: center;
+}
+.invoice .card .invoice_list li .amount p {
+  margin-right: 5px;
+}
+.invoice .card .invoice_list li h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.invoice .card .invoice_list li p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+.invoice .card .invoice_list li a {
+  font-size: 10px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.invoice .card .invoice_list li a i {
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.billing_info .card {
+  padding: 20px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+.billing_info .card .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.billing_info .card .header h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.billing_info .card .billers_list li {
+  background: #F8F9FA;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+}
+.billing_info .card .billers_list li .top_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.billing_info .card .billers_list li h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #A0AEC0;
+  display: inline !important;
+}
+.billing_info .card .billers_list li p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #A0AEC0;
+  display: inline !important;
+}
+.billing_info .card .billers_list li a {
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.billing_info .card .billers_list li a i {
+  padding-right: 5px;
+}
+
+.transactions .card {
+  padding: 20px;
+  border: none;
+  background: #FFFFFF;
+  box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+  border-radius: 15px;
+}
+.transactions .card .header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.transactions .card .header h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.transactions .card .header p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+.transactions .card .header p i {
+  color: #000;
+  padding-right: 5px;
+}
+.transactions .card .body span {
+  font-size: 10px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+.transactions .card .body .transaction_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.transactions .card .body .transaction_list .left {
+  display: flex;
+  align-items: center;
+}
+.transactions .card .body .transaction_list .left .icon {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-right: 10px;
+}
+.transactions .card .body .transaction_list .left .icon i {
+  font-size: 15px;
+  color: transparent;
+}
+.transactions .card .body .transaction_list h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2D3748;
+}
+.transactions .card .body .transaction_list p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #A0AEC0;
+}
+.transactions .card .body .transaction_list.up .left .icon {
+  border: 1px solid #48BB78 !important;
+}
+.transactions .card .body .transaction_list.up .left .icon i {
+  color: #48BB78 !important;
+}
+.transactions .card .body .transaction_list.up .right p {
+  color: #48BB78 !important;
+}
+.transactions .card .body .transaction_list.down .left .icon {
+  border: 1px solid #E53E3E !important;
+}
+.transactions .card .body .transaction_list.down .left .icon i {
+  color: #E53E3E !important;
+}
+.transactions .card .body .transaction_list.down .right p {
+  color: #E53E3E !important;
+}
+.transactions .card .body .transaction_list.warn .left .icon {
+  border: 1px solid #A0AEC0 !important;
+}
+.transactions .card .body .transaction_list.warn .left .icon i {
+  color: #A0AEC0 !important;
+}
+.transactions .card .body .transaction_list.warn .right p {
+  color: #2D3748 !important;
+}
+
+/* ============================== Billing Part End =================================== *//*# sourceMappingURL=style.css.map */

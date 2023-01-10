@@ -3,12 +3,15 @@
     padding: 30px 20px;
     position: fixed;
     inset: 0;
-    width: 240px;
+    width: 245px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
     &.yo{
-        width: 50px !important;
+        width: 70px !important;
     }
     .navigation {
-        width: 50px;
+        width: 70px;
         background: transparent;
         overflow: hidden;
         transition: 0.5s;
@@ -72,11 +75,28 @@
                             margin-bottom: 10px;
                         }
                     }
+                    &.active{
+                        background: #fff;
+                        color: #222;
+                        background: #FFFFFF;
+                        box-shadow: 0px 3.5px 5.5px rgba(0, 0, 0, 0.02);
+                        border-radius: 15px;
+                        a{
+                            .icon{
+                                background: $hover;
+                                i{
+                                    color: #fff;
+                                }
+                            }
+                            .title{
+                                color: $Grey;
+                            }
+                        }
+                    }
                 }
             }
 
             .help_line{
-                margin: 0 auto;
                 display: block;
                 width: 210px;
                 height: 160px;
@@ -122,7 +142,7 @@
                         }
                     }
                     a{
-                        padding: 10px 50px;
+                        padding: 10px 44px;
                         background: #FFFFFF;
                         border-radius: 12px;
                         @include text(10px,700,$Grey);
@@ -197,6 +217,19 @@
                         @include text(0,700,$Grey);
                         padding-bottom: 24px;
                         @include transition();
+                    }
+                }
+                &.active{
+                    a{
+                        .icon{
+                            background: $hover;
+                            i{
+                                color: #fff;
+                            }
+                        }
+                        .title{
+                            color: $Grey;
+                        }
                     }
                 }
             }
